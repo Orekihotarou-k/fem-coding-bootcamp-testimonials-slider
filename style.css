@@ -1,34 +1,5 @@
-/* root */
-:root {
-    --clr-Dark-Blue: #202046;
-    --clr-Grayish-Blue: #babacf;
 
-    --ff: 'Inter', sans-serif;
-    --fs-body: clamp(1rem, 1.5vw, 2rem);
-    --fw-300: 300;
-    --fw-500: 500;
-    --fw-700: 700;
-}
-
-/* reset */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-}
-
-button {
-    font: inherit;
-}
-
-.testimonial-slider {
+/* .testimonial-slider {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,4 +49,101 @@ button {
     border: none;
     cursor: pointer;
     padding: 10px;
+} */
+
+
+/* root */
+:root {
+    --clr-Dark-Blue: #202046;
+    --clr-Grayish-Blue: #babacf;
+
+    --ff: 'Inter', sans-serif;
+    --fs-body: clamp(1rem, 1.5vw, 2rem);
+    --fw-300: 300;
+    --fw-500: 500;
+    --fw-700: 700;
+}
+
+/* reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    font: inherit;
+}
+
+body {
+    font-family: var(--ff);
+    font-weight: var(--fw-300);
+    font-size: var(--fs-body);
+    color: var(--clr-Dark-Blue);
+    background: url(images/pattern-curve.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/* typography */
+.username {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: var(--fw-700);
+    font-style: normal;
+}
+
+.username span {
+    color: var(--clr-Grayish-Blue);
+}
+
+
+/* layout styles */
+.slide-col {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+/* general styles */
+.slide-buttons {
+    display: inline-flex;
+    gap: 2rem;
+    background: #fff;
+    padding: .8rem;
+    border-radius: 999px;
+}
+
+.btn {
+    border: none;
+    background: none;
+}
+
+.btn img {
+    transition: scale .2s ease;
+}
+
+.btn img:hover {
+    scale: 130%;
+}
+
+.slide-img {
+    position: relative;
+}
+
+.slide-img::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url(images/);
+    position: absolute;
 }
